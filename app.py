@@ -30,7 +30,7 @@ gender_code = 1 if gender == "Male" else 0
 
 # Prediction
 if st.button("Predict"):
-    input_data = np.array([[hr, rr, bt, spo2, age, gender_code, weight, height,
+    input_data = np.array([[ rr, bt, spo2, age,hr, gender_code, weight, height,
                             pulse_pressure,  map_val]])
 
     # input_data = input_data.drop(columns=['Derived_HRV', 'Derived_BMI', 'Systolic Blood Pressure', 'Diastolic Blood Pressure'])
